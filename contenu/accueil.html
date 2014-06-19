@@ -1,0 +1,111 @@
+<!DOCTYPE html>  <!--on indique au navigateur que le doc est codé en html-->
+
+
+<html> <!--le html commence ici-->
+
+
+
+
+<head>  <!-- la section HEAD commence ici: elle contient des indications destinées au navigateur
+qui ne sont pas sensées participer directement a l affichage du contenu-->
+
+<title>accueil</title>
+
+<meta charset="UTF-8"/>
+<style type="text/css">
+	
+*
+	{
+		border:none ;
+		padding:0;
+		margin:0;
+	}
+
+body{
+	background-color:black;
+	background-image:url(images-site/647_Textures.jpg);
+	background-position:center;
+	background-repeat:no-repeat ;
+	background opacity:0.1;
+}
+
+#container{
+	border:solid 1px blue ;
+	margin:auto ;
+	margin-top:50px ;
+	width:900px ;
+	height:768px ;
+	position:relative ;
+	background-image:url(images-site/backlog.png);
+}
+
+#cadre{
+	position:absolute ;
+	width:100%;
+	height:100% ;
+	border:solid 1px yellow ;
+	margin:auto ;
+}
+
+#log{position:absolute;
+	float:left;
+	width:180px;
+	border:solid 1px black ;
+}
+
+#barg {
+	border:solid 1px red ;
+	position:absolute ;
+}
+
+#galerie{
+	border:solid 1px red;
+	position:absolute ;
+	margin:auto ;
+	width:500px ;
+	height:500px;
+	float:left ;
+}
+
+#croix{
+	border:solid 1px white ;
+	position:absolute ;
+	margin-top:375px ;
+}
+.gal{
+	width:100px ;
+	margin:auto ;
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+<div id="container"><img id="croix"src="images-site/croix.png"/>
+	<div id="cadre">
+			<img id="barg"src="images-site/barego.png"/>
+			<img id="log"src="images-site/logogo.png"/>
+		<div id "galerie">
+		<a href="$"><img class="gal"src="images-site/DSC_2390.jpg"/></a>
+		<a href="$"><img class="gal"src="images-site/DSC_2390.jpg"/></a>
+		<a href="$"><img class="gal"src="images-site/DSC_2390.jpg"/></a>
+		<a href="$"><img class="gal"src="images-site/DSC_2390.jpg"/></a>
+		</div><!--galerie-->
+		
+		</div><!--cadre-->
+		
+	
+
+	</div><!--container-->
+
+
+
+
+	
+	
+	
+</body>
+</html>

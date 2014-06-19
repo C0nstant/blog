@@ -1,0 +1,93 @@
+#blokmenu{
+	border-radius:20px 20px 2Opx 20px ;
+	border:solid 0px pink;
+	width:150px;
+}
+
+/********************************************************/
+/********************************************************/
+
+#leftmenu{
+	border:solid 0px red ;
+	width:15px ;
+	height:154px ;
+	border-radius:0px 0px 0px 10px ;
+	float:left ;
+	padding-right:2px ;
+	box-shadow:1px 1px 1px gray ;
+}
+
+/********************************************************/
+/********************************************************/
+
+#menu{
+	float:left ;
+	border:solid 0px red ;
+	border-radius:20px 20px 2Opx 20px ;
+	width:150px ;
+	height:800px;
+	background-color:  /***  CSS Gradient  ***/
+  /*  Chrome 1-9 and Safari 4-5.0  */
+  background-image: -webkit-gradient(linear, left top, left bottom,
+        color-stop( 0.0, rgb(0, 0, 0) ),
+        color-stop( 1.0, rgb(99, 99, 99) ));
+
+  /*  Chrome 10+ Safari 5.1+ Mobile Safari  */
+  background-image: -webkit-linear-gradient(top,
+        rgb(0, 0, 0), 
+        rgb(99, 99, 99) );
+
+  /*  Firefox 3.6+  */
+  background-image: -moz-linear-gradient(top,
+        rgb(0, 0, 0), 
+        rgb(99, 99, 99) );
+
+  /*  IE 10+  */
+  background-image: -ms-linear-gradient(top,
+        rgb(0, 0, 0), 
+        rgb(99, 99, 99) );
+
+  /*  Opera 11.10+  */
+  background-image: -o-linear-gradient(top,
+        rgb(0, 0, 0), 
+        rgb(99, 99, 99) );
+
+  /*  W3C  */
+  background-image: linear-gradient(top,
+        rgb(0, 0, 0), 
+        rgb(99, 99, 99) );
+}
+/********************************************************/
+/********************************************************/
+
+a{	
+	font-size:12px;
+	height:20px;
+	font-family:Futura,arial,sans-serif ;
+	border: solid 0px ;
+	text-decoration: none ;
+	margin:50px 0px;
+	color: #ccc;
+	color:rgba(255 255 255 0.3);
+	text-shadow:1px 1px 1px black ;
+	/*-webkit-transition:color 0.5s ease-in-out;
+	transition:color 0.5s ease-in-out;*/
+	/*background-color: #D8CFB5 ;*/
+}
+a:hover{
+	font-size:12px;
+	padding-left:10px;
+	color: #F3A041 ;
+
+}
+
+
+/********************************************************/
+/********************************************************/
+.ong{
+	margin-bottom:6px;
+	border-bottom:solid 1px F3A041;
+	border-radius:0px 20px 20px 0px;
+	padding-left:40px;
+
+}
