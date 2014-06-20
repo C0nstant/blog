@@ -9,7 +9,7 @@
 
 	<!--<h1>Mon Administration</h1>-->
 	
-	Bonjour <?php echo $_SESSION['user'];?>
+	Bonjour <?php echo $_SESSION['user']['username'];?>
 <p>&nbsp;</p>
 <?php
 	include_once('includes/footer.php');

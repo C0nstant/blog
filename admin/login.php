@@ -1,40 +1,27 @@
 <?php 
 	$title="Page d authentification";
 	include_once('includes/actions.php');
-	include_once('includes/header.php');?>
+	include_once('includes/header.php');
 
-<h1>Identification</h1>
-<hr />
-	<!--<p>Vous devez vous authentifier pour accéder a l'espace protégé.</p>-->
-	<form class="login" action="login.php" method="post">
-	<input type="hidden" name="action" value="login" />
-		<fieldset class="fields">
-			<div class="row">
-				<label for="username">Votre nom d'utilisateur:&nbsp;</label>
-				<input class="arrondi" type="text" name="username" value="<?php 
-					if (isset ($_POST['username'])) {
-						echo $_POST['username'];
-					}
-				?>"/>
-			</div>
+if (isset($_POST['action']) && $_POST['action']==='login'){
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	
+	$log = login($username,$password);
+	
+	if ($log===false){
+		echo 'mauvais identifiant';
+	}
+	
+	else{
+		session_start();
+		$_SESSION['user']=array(
+			'id'=>$log['id_user'],
+			'username'=>$log['username']);
 			
-			<div class="row">
-				<label for ="password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Votre mot de passe:</label>
-				<input class="arrondi"type="password" name="password" value="<?php 
-					if (isset ($_POST['password'])){
-						echo $_POST['password'];
-					}
-				?>" />
-				
-				<!--input type="password"(pointillés remplacent les caractères entrés)-->
-				
-			</div>
-		</fieldset>
-		
-		<fieldset class="action">
-			<button type="submit">login</button>
-		</fieldset>
-	</form>
+		header("Location: index.php");
+	}
+}
 
-
-<?php include_once('includes/footer.php');?>
+require_once('view/viewlogin.php');
+include_once('includes/footer.php');
